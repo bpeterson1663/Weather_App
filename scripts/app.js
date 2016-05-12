@@ -8,9 +8,12 @@ function getWeather(event){
   var city = $('#city').val();
   if(city != ""){
     $.get('scripts/scraper.php?city='+city+'', function(data){
-      alert(data);
+      $('.alert').html(data).removeClass('alert-danger').addClass('alert-success').fadeIn();
+      if(data == ""){
+        $('.alert').html("Sorry. The Weather is not available").addClass('alert-danger').fadeIn();
+      }
     });
   }else{
-    alert("Please Enter A City");
+    $('.alert').html("Please Enter A City").addClass('alert-danger').fadeIn();
   }
 }

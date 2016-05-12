@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Weather Scraper</title>
+    <title>Weather Forecast Prediction</title>
     <script src="vendors/jquery/dist/jquery.min.js" type="text/javascript"></script>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="scripts/app.js" type="text/javascript"></script>
@@ -14,8 +14,8 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-md-offest-3">
-          <h1 class="white center">Weather Scrapper</h1>
+        <div class="col-md-6 col-md-offset-3">
+          <h1 class="white center">Weather Forecast Prediction</h1>
           <p class="lead white center">Enter your city below for a weather forecast</p>
           <form class="center" id="weather">
             <div class="form-group">
@@ -24,7 +24,11 @@
             </div>
             <input type="submit" class="btn btn-success btn-lg" value="Find Weather" />
           </form>
+          <div class="alert">
+
+          </div>
         </div>
+
       </div>
     </div>
   </body>
